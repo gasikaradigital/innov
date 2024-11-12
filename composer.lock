@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e7bcf9d09fd9a57e3c585dd15105ac3",
+    "content-hash": "8947f2e0a3c3a16cbbd06acbea57ffb2",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -119,6 +119,54 @@
                 }
             ],
             "time": "2023-11-29T23:19:16+00:00"
+        },
+        {
+            "name": "caprel/laravel-dolibarr",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://inligit.fr/cap-rel/dolibarr/laravel-dolibarr/",
+                "reference": "4d89bc3b500cce026938dbab676634f8877cbe2e"
+            },
+            "require": {
+                "illuminate/config": ">6.0.0",
+                "illuminate/support": ">6.0.0",
+                "php": "^7.4|^8.0|^8.1|^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Caprel\\Dolibarr\\DolibarrServiceProvider"
+                    ],
+                    "aliases": {
+                        "Dolibarr": "Caprel\\Dolibarr\\DolibarrFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caprel\\Dolibarr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Seigne",
+                    "email": "eric.seigne@cap-rel.fr",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Accessing to Dolibarr API",
+            "homepage": "https://inligit.fr/cap-rel/dolibarr/laravel-dolibarr",
+            "keywords": [
+                "Dolibarr",
+                "caprel"
+            ],
+            "time": "2023-01-02T09:43:27+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
